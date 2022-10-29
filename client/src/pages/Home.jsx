@@ -1,11 +1,11 @@
 import React from 'react';
-import { Carousel,  Button, Card, Figure } from 'react-bootstrap';
+import { Carousel, Button, Figure } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './home.css';
 
 const Home = () => {
     return (
-        <>
+        <div>
          <Carousel>
   <Carousel.Item interval={1000}>
     <img
@@ -14,8 +14,12 @@ const Home = () => {
       alt="First slide"
     />
     <div className="carousel-caption d-none d-md-block">
-        <h5>Heading 1</h5>
-        <Link type="button" to="/about"><Button variant="info" size="lg">Know More</Button></Link>
+        <h1>Heading 1</h1>
+        <Link type="button" to="/about"><Button variant="info" size="lg">Know More&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+        </Button></Link>
       </div>
   </Carousel.Item>
   <Carousel.Item interval={500}>
@@ -25,8 +29,12 @@ const Home = () => {
       alt="Second slide"
     />
     <div className="carousel-caption d-none d-md-block">
-        <h5>Heading 2</h5>
-        <Link type="button" to="/about"><Button variant="info" size="lg">Know More</Button></Link>
+        <h1>Heading 2</h1>
+        <Link type="button" to="/about"><Button variant="info" size="lg">Know More&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+        </Button></Link>
       </div>
   </Carousel.Item>
   <Carousel.Item>
@@ -36,20 +44,28 @@ const Home = () => {
       alt="Third slide"
     />
     <div className="carousel-caption d-none d-md-block">
-        <h5>Heading 3</h5>
-        <Link type="button" to="/about"><Button variant="info" size="lg">Know More</Button></Link>
+        <h1>Heading 3</h1>
+        <Link type="button" to="/about"><Button variant="info" size="lg">Know More&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+        </Button></Link>
       </div>
   </Carousel.Item>
   </Carousel>
 
     <div className="row p-5">
-   
     <div className="col">
     <Figure>
         <Figure.Caption>
         <h5>About Us</h5>
+        <h3>HAC CONSULTING</h3>
         <p>SAMPLE TEXT TO SHARE FOR THE ABOUT PAGE....to be added here</p>
-        <Link to='/about' type='button' className="btn btn-info">SEE OUR MANAGEMENT</Link>
+        <Link to='/about' type='button'><Button variant="info" size="lg">SEE OUR MANAGEMENT&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+        </Button></Link>
       </Figure.Caption>
       </Figure>
       </div>
@@ -128,7 +144,7 @@ const Home = () => {
       </Card.Body>
     </Card> */}
     <div class="container">
-        <div class="d-lg-flex">
+        <div class="d-lg-flex justify-content-center">
             <div class="card border-0 me-lg-4 mb-lg-0 mb-4">
                 <div class="backgroundEffect">
                     </div>
@@ -139,8 +155,8 @@ const Home = () => {
                                     <p class="h-1 mt-4">Card Title</p>
                                     <p class="text-muted mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                                        <div class="btn btn-info">Know More<span class="fas fa-arrow-right"></span>
-                                        </div>
+                                        <Link style={{textDecoration: 'none'}} to="/whatwedo"><div class="btn btn-info">Know More<span class="fas fa-arrow-right"></span>
+                                        </div></Link>
                                             </div>
                                             </div>
                                             </div>
@@ -154,8 +170,8 @@ const Home = () => {
                                     <p class="h-1 mt-4">Card Title</p>
                                     <p class="text-muted mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                                        <div class="btn btn-info">Know More<span class="fas fa-arrow-right"></span>
-                                        </div>
+                                    <Link style={{textDecoration: 'none'}} to="/whatwedo"><div class="btn btn-info">Know More<span class="fas fa-arrow-right"></span>
+                                        </div></Link>
                                             </div>
                                             </div>
                                             </div>
@@ -169,8 +185,8 @@ const Home = () => {
                                     <p class="h-1 mt-4">Card Title</p>
                                     <p class="text-muted mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                                        <div class="btn btn-info">Know More<span class="fas fa-arrow-right"></span>
-                                        </div>
+                                    <Link style={{textDecoration: 'none'}} to="/whatwedo"><div class="btn btn-info">Know More<span class="fas fa-arrow-right"></span>
+                                        </div></Link>
                                             </div>
                                             </div>
                                             </div>
@@ -184,15 +200,15 @@ const Home = () => {
                                     <p class="h-1 mt-4">Card Title</p>
                                     <p class="text-muted mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                                        <div class="btn btn-info">Know More<span class="fas fa-arrow-right"></span>
-                                        </div>
+                                    <Link style={{textDecoration: 'none'}} to="/whatwedo"><div class="btn btn-info">Know More<span class="fas fa-arrow-right"></span>
+                                        </div></Link>
                                             </div>
                                             </div>
                                             </div>
                                             </div>
                                             </div>
     {/* </div> */}
-</>
+</div>
     );
 };
 
