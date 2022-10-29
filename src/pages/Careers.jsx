@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './careers.css';
+import './pagetitle.css';
 
 const Careers = () => {
     return (
