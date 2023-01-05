@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Header = () => {
   return (
     <div>
-      <Navbar bg="info" variant="light" className="py-4" >
+      <Navbar bg="dark" variant="dark" className="py-4" >
         <Container>
           <Navbar.Brand href="/">LOGO</Navbar.Brand>
           <Nav className="justify-content-end">
